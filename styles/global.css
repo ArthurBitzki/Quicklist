@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --title: font: 800 1.5rem/2;
+    --label: font: 600 1rem/1.25;
+    --paragraph: font: 500 1rem/1.25;
+    --link: font: 500 .875rem/1;
+    --ff-base: "Inter", sans-serif;
+
+    --color-brand: #ca3884;
+    --color-brand-hover: #a52c6b;
+    --color-danger: #c93847;
+    --background-primary: #f4f5fb;
+    --background-secondary: #ffffff;
+    --content-primary: #080b12;
+    --content-secondary: #374151;
+    --content-terti: #9ca3af;
+    --border-primary: #d1d5db;
+    --border-hover: #b9c2d0;
+}

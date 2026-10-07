@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lista de compras da semana">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Quicklist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="shopping-app">
+        <header class="shopping-header">
+            <div class="brand" aria-label="Quicklist">
+                <img class="brand__logo" src="icons/logo.svg" alt="Quicklist">
+            </div>
+        </header>
+
+        <section class="shopping-content" aria-labelledby="shopping-title">
+            <h1 class="shopping-title" id="shopping-title">Compras da semana</h1>
+
+            <form class="add-item-form" id="add-item-form" aria-label="Adicionar item à lista">
+                <label class="sr-only" for="new-item">Nome do item</label>
+                <input
+                    class="add-item-form__input"
+                    id="new-item"
+                    name="item"
+                    type="text"
+                    placeholder="Adicione um novo item"
+                    autocomplete="off"
+                >
+                <button class="add-item-form__button" type="submit">Adicionar item</button>
+            </form>
+
+            <section class="shopping-list-section" aria-label="Lista de compras">
+                <ul class="shopping-list" id="shopping-list">
+                    
+                </ul>
+            </section>
+
+            <!--<div class="feedback-message" role="alert">
+                <img class="feedback-message__icon" src="icons/warning.svg" alt="">
+                <p class="feedback-message__text">O item foi removido da lista</p>
+                <img class="feedback-message__close" src="icons/delete.svg" alt="">
+            </div>-->
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
